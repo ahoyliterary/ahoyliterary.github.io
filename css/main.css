@@ -64,7 +64,9 @@ icontab {
     text-align: center;
 }
 .icon {
-    align: mid
-    text-align: center;
+    width: 36px;
+}
+.instagramhover {
+    background-image:url(./icons/instagram_blue.svg);
     width: 36px;
 }
