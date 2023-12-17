@@ -4,6 +4,9 @@
     font-family: EBGaramond;
     src: url(../fonts/EBGaramond.woff);
 }
+html {
+    padding: 36px;
+}
 hr {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -24,11 +27,11 @@ a:active {
       text-decoration: none;
 }
 body {
-    margin-top: 72px;
-    margin-bottom: 72px;
+    margin-top: 36px;
+    margin-bottom: 36px;
     margin-left: auto;
     margin-right: auto;
-    min-width: 672px;
+    min-width: 560px;
     max-width:  784px;
     background-color: cornsilk;
 }
