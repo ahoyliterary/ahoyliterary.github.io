@@ -34,6 +34,7 @@ body {
     min-width: 560px;
     max-width:  784px;
     background-color: cornsilk;
+    line-height: 1.4;
 }
 h1 {
     text-align: center;
