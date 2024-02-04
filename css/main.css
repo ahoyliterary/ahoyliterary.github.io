@@ -1,8 +1,17 @@
 /* Main CSS file for Ahoy Literary website. Written by Marcel Goh 16.XII.2023 */
 
+/* Colours:
+ * Light blue: #355ff2
+ * Dark blue:  #23348d
+ * White:      #f8f8f8
+ * Orange:     #ff8b03
+ * Yellowy:    #e0c165
+ * Off-white:  #e3ddd2
+ */
+
 @font-face {
-    font-family: EBGaramond;
-    src: url(../fonts/EBGaramond.woff);
+    font-family: AdobeCaslonPro;
+    src: url(../fonts/AdobeCaslonPro.woff);
 }
 html {
     padding: 36px;
@@ -13,17 +22,17 @@ hr {
 }
 a:link {
       text-decoration: none;
-      color: inherit;
+      color: #23348D;
 }
 a:visited {
       text-decoration: none;
-      color: inherit;
+      color: #23348D;
 }
 a:hover {
-      color: darkblue;
+      color: #355ff2;
 }
 a:active {
-      color: inherit;
+      color: #23348D;
       text-decoration: none;
 }
 body {
@@ -33,27 +42,32 @@ body {
     margin-right: auto;
     min-width: 560px;
     max-width:  784px;
-    background-color: cornsilk;
+    background-color: #e3ddd2;
     line-height: 1.5;
 }
 h1 {
     text-align: center;
-    font-family: EBGaramond, Libertine, Georgia, serif;
+    font-family: AdobeCaslonPro, Libertine, Georgia, serif;
     font-size: 72px;
     font-weight: bold;
 }
 h2 {
-    font-family: EBGaramond, Libertine, Georgia, serif;
+    font-family: AdobeCaslonPro, Libertine, Georgia, serif;
     font-size: 24px;
     font-weight: bold;
 }
+h3 {
+    font-family: AdobeCaslonPro, Libertine, Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
+}
 p {
-    font-family: EBGaramond, Libertine, Georgia, serif;
+    font-family: AdobeCaslonPro, Libertine, Georgia, serif;
     font-size: 18px;
 }
 .menu {
     text-align: center;
-    font-family: EBGaramond, Libertine, Georgia, serif;;
+    font-family: AdobeCaslonPro, Libertine, Georgia, serif;;
     font-size: 24px;
 }
 menutab {
@@ -67,12 +81,14 @@ icontab {
 .center {
     text-align: center;
 }
+.languages {
+    text-align: right;
+}
 .icon {
     width: 36px;
 }
-.instagramhover {
-    background-image:url(./icons/instagram_blue.svg);
-    width: 36px;
+.logo {
+    width: 288px;
 }
 .headshot {
     float: left;
