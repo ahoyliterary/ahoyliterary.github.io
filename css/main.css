@@ -34,7 +34,7 @@ body {
     min-width: 560px;
     max-width:  784px;
     background-color: cornsilk;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 h1 {
     text-align: center;
@@ -73,4 +73,9 @@ icontab {
 .instagramhover {
     background-image:url(./icons/instagram_blue.svg);
     width: 36px;
+}
+.headshot {
+    float: left;
+    padding: 12px;
+    height: 144px;
 }
