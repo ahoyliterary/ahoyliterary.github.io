@@ -13,6 +13,10 @@
     font-family: AdobeCaslonPro;
     src: url(../fonts/AdobeCaslonPro.woff);
 }
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat.woff);
+}
 html {
     padding: 36px;
 }
@@ -53,22 +57,26 @@ h1 {
 }
 h2 {
     font-family: AdobeCaslonPro, Libertine, Georgia, serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 h3 {
     font-family: AdobeCaslonPro, Libertine, Georgia, serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 p {
     font-family: AdobeCaslonPro, Libertine, Georgia, serif;
-    font-size: 18px;
+    font-size: 20px;
+}
+li {
+    font-family: AdobeCaslonPro, Libertine, Georgia, serif;
+    font-size: 20px;
 }
 .menu {
     text-align: center;
     font-family: AdobeCaslonPro, Libertine, Georgia, serif;;
-    font-size: 24px;
+    font-size: 28px;
 }
 menutab {
   display: inline-block;
@@ -93,5 +101,24 @@ icontab {
 .headshot {
     float: left;
     padding: 12px;
-    height: 144px;
+    height: 168px;
+}
+* {
+    box-sizing: border-box;
+}
+.twobox {
+    float: left;
+    width: 50%;
+    padding-left: 70px;
+    padding-right; 70px;
+}
+.threebox {
+    float: left;
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right; 12px;
+}
+img.orangeborder {
+    border-style: solid;
+    border-color: #ff8b03;
 }
