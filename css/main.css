@@ -44,8 +44,8 @@ body {
     margin-bottom: 36px;
     margin-left: auto;
     margin-right: auto;
-    min-width: 560px;
-    max-width:  784px;
+    min-width: 800px;
+    max-width:  800px;
     background-color: #f8f8f8;
     line-height: 1.5;
 }
@@ -80,7 +80,7 @@ li {
 }
 menutab {
   display: inline-block;
-  margin-left: 72px;
+  margin-left: 48px;
 }
 icontab {
   display: inline-block;
