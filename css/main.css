@@ -122,3 +122,11 @@ img.orangeborder {
     border-style: solid;
     border-color: #ff8b03;
 }
+img.redborder {
+    border-style: solid;
+    border-color: #910030;
+}
+img.brownborder {
+    border-style: solid;
+    border-color: #645145;
+}
