@@ -6,6 +6,17 @@
 <title>Ahoy &bull; Masthead</title>
 <link rel="stylesheet" href="./css/main.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<!---
+<script>
+function changeImage() {
+    if (document.getElementById("jonahphoto").src == "./headshots/jonah.jpg"){
+        document.getElementById("jonahphoto").src = "./headshots/jonah_old.jpg";
+    } else {
+        document.getElementById("jonahphoto").src = "./headshots/jonah.jpg";
+    }
+}
+</script>
+--->
 </head>
 
 <body>
@@ -41,7 +52,8 @@ and his short memoir “Lanterns” won the <i>Malahat Review</i>'s 2024 Constan
 His writing has also appeared in <i>Ricepaper</i>, <i>Existere</i>, and <i>The Prairie Journal</i>.
 He can be found online at <a href="https://marcelgoh.ca">marcelgoh.ca</a>.
 </p>
-<img class="headshot" src="./headshots/jonah.jpg">
+<img class="headshot" id="jonahphoto" onclick="this.src='./headshots/jonah_old.jpg'"
+src="./headshots/jonah.jpg">
 <!--- 24 = (168-(3*30))/2 ---!>
 <p style="padding-top:24px;padding-bottom:24px">
 <b>Jonah Saks</b>
@@ -59,11 +71,10 @@ currently teaching math at CEGEP. Find him at
 <!--- 24 = (168-(24*30))/2 ---!>
 <p style="padding-top:24px;padding-bottom:24px">
 <b>Sarah Des Rosiers-Legault</b>
-is a poet from Montréal, where she lives
-with her dog, Bambi. She served as poetry editor for <i>yolk</i> in 2020.
-She recently earned her MFA in poetry from
-the University of Oregon, where she also taught undergraduate poetry
-workshops.
+is a poet from Montréal, now based in Rimouski, where she teaches
+English as a second language CEGEP. She served as poetry editor for
+<i>yolk</i> in 2020. She recently earned her MFA in Poetry from the University of
+Oregon, where she also taught undergraduate poetry workshops.
 </p>
 
 <img class="headshot" src="./headshots/laura.jpg">
