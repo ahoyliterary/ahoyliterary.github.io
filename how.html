@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--- Written by Marcel Goh on 16.XII.2023 --->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ahoy &bull; How</title>
+<link rel="stylesheet" href="./css/main.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+
+<p class="center">
+<a href="./index.html"><img class="logo" src="./icons/ahoy.png"
+    onmouseover="this.src='./icons/ahoy_hover.png'"
+    onmouseout="this.src='./icons/ahoy.png'"></a>
+</p>
+
+<h2 class="center">How to accept submissions and prepare proofs for printing</h2>
+
+<i>These instructions were prepared by Marcel Goh on 16 October 2025. They are intended for new editors to
+    understand our process for accepting submissions and typesetting them for the printer.</i>
+
+<h3 class="center">The overall timeline</h3>
+
+<p>
+After decisions have been made, this is the timeline of events.
+
+<ol>
+    <li>Editors notify authors of acceptance individually</li>
+    <li>Editors settle all required edits with authors</li>
+    <li>Editors send formatted text to typesetter (me)</li>
+    <li>I send proofs to authors for final verification</li>
+</ol>
+
+<h3 class="center">1. Notifying authors</h3>
+
+<p>
+Once decisions have been made, the selected pieces will be listed in a spreadsheet, and the selected
+authors will be divided among the editors. There will be cells in the spreadsheet to keep track of how far
+along in the process we are with each piece. Once the whole spreadsheet is green,
+we'll be ready for the printers!
+</p>
+<p>
+Each editor should
+notify their authors individually that we want to publish their piece, and ask whether it's already been
+taken. We also request First North American Serial Rights from them, ask whether they'll be able
+to attend the launch, and whether they want to reserve copies at contributor pricing.
+All of this has been done many times in the past, so you can search our
+email archives for a template, and edit the author's name, name of the work, etc. accordingly.
+</p>
+
+<h3 class="center">2. Settling edits</h3>
+
+<p>
+Once your author has confirmed the piece is still available, it's time to square away the edits that you
+want to make to the piece. If the piece requires no modification whatsoever, you may skip this step.
+</p>
+<p>
+Either by annotating their document or just listing the requested changes in the text
+of the email, ask the author whether
+they're O.K. with the changes you want to make, and whether they want to make any additional or alternative
+edits. This may involve a back-and-forth exchange of multiple emails, and is usually the most time-consuming
+part of this whole process.
+</p>
+
+<h3 class="center">3. Formatting text for typesetting</h3>
+
+<p>
+When you are done with the previous step, you will either have a Word or Google document with all the
+changes done, or the original PDF, plus a list of author-approved changes. Either way, you'll need to copy
+the text into a .txt file (you can make this type of file using e.g., Notepad on Windows or TextEdit
+on Mac). For documents, this is as easy as just copying the text over. For PDFs, you may have to use a
+PDF-to-text converter online.
+</p>
+
+<p>
+After converting to .txt, you'll see that all the formatting information has been lost. You'll have
+to add it back in using a markup language that the Ahoy typesetting program understands.
+<ul>
+    <li><i>Italics</i> are denoted by <tt>{\it ... }</tt>.</li>
+    <li><b>Bold</b> is denoted by <tt>{\bf ... }</tt>.</li>
+    <li>Numerals are denoted by <tt>{\os ... }</tt>.</li>
+    <li>Small-caps are denoted by <tt>{\sc ... }</tt>.</li>
+    <li>All-caps abbreviations should be put in medium-caps using <tt>{\mc ... }</tt>.</li>
+    <li>Periods that don't end sentences should have the tilde symbol placed after them.</li>
+    <li>Paragraphs should be separated by a line of whitespace</li>
+    <li>Make sure the opening and closing quotes are smart quotes (“ and ”, not "). If this isn't
+        automatically done by Word or Google, you can write <tt>``</tt> for “ and <tt>''</tt> for
+        ”. [This is a fairly tedious step. Feel free to skip it, but if you do, just let me know.]
+    </li>
+</ul>
+
+<p>Here's an example story.</p>
+
+<pre>
+<b>The Piper</b>
+
+by Jane Smith
+
+There once was a man named Pierre P. Hamelin who lived at 17 Sherbrooke Street. One day he saw on the
+TV that the mayor would pay one million dollars for a solution to the city's squirrel problem.
+
+"I can get rid of the squirrels," announced Pierre at the city hall.
+
+The mayor said sure
+and Pierre played a special song on his boom box that turned all the acorns into magic acorns.
+After eating the acorns, the squirrels each stepped into traffic one by one.
+
+"I've come for my pay," said Pierre, after finishing the job.
+
+The mayor did not pay. <i>Well I don't need to pay this guy, he already killed all the squirrels,</i> she thought.
+
+So Pierre played a new song on his boom box that made all the city's bike lanes disappear.
+All the hipsters moved to Toronto and the mayor was voted out of office.
+</pre>
+
+<p>
+The way you would enter it into the .txt file is as follows.
+</p>
+
+<pre>
+<code>
+\bookheader{\it Jane Smith}{\it The Piper}
+
+\preambleheader{THE PIPER}{Jane Smith}
+
+There once was a man named Pierre P.~Hamelin who lived at {\os 17} Sherbrooke Street.
+One day he saw on the {\mc TV} that the mayor would pay one million dollars for a
+solution to the city's squirrel problem.
+
+``I can get rid of the squirrels,'' announced Pierre at the city hall.
+
+The mayor said sure and Pierre played a special song on his boom box that
+turned all the acorns into magic acorns. After
+eating the acorns, the squirrels each stepped into traffic one by one.
+
+``I've come for my pay,'' said Pierre, after finishing the job.
+
+The mayor did not pay. {\it Well I don't need to pay this guy, he already killed all
+the squirrels,} she thought.
+
+So Pierre played a new song on his boom box that made all the city's bike lanes
+disappear. All the hipsters moved to Toronto and the mayor was voted out of
+office.
+</code>
+</pre>
+
+<p>
+(Don't worry about the "bookheader" and "preambleheader" tags if you're confused about them.
+I can always add them myself later.)
+The Ahoy typesetting program will read this and produce the following output.
+</p>
+
+<img src="./how_example.png">
+
+<p>
+There's a lot of stuff to keep track of, so don't worry about getting everything. I will look over
+everything again and fix anything you've missed, but just try to get as much of the formatting done
+as possible to lighten my workload.
+</p>
+<p>
+You can concatenate everything into one .txt file or have multiple .txt files. There'll be a designated
+place in the Google Drive to upload these files.
+</p>
+
+<h3 class="center">4. Proofs sent to authors</h3>
+
+<p>
+Once the texts have been formatted and converted into PDF by the Ahoy typesetting program, I'll send
+the PDFs to the authors to make sure they're happy with how their work will appear in the final magazine.
+There's nothing that you editors have to do at this stage, but if there
+are discrepancies between what are in the proofs and what the authors intended, I'll have to refer
+to the email threads you made with the authors, so make sure that there is a clear record of all
+agreements you reach. (Otherwise I'll have to DM you to ask for more details!)
+</p>
+
+</body>
+</html>
